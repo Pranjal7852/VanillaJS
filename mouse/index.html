@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the mouse location</h1>
+    <h3 class="x">Intial x</h3>
+    <h3 class="y">Intial y</h3>
+    <script>
+        document.querySelector("body").addEventListener("mouseover", function(e) {
+            console.log(e);
+            document.querySelector(".x").innerHTML = e.screenX;
+            document.querySelector(".y").innerHTML = e.screenY;
+
+        })
+    </script>
+</body>
+</html>

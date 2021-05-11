@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: yellow;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header {
+    text-align: center;
+    width: 100vw;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px gray;
+    font-family: 'Permanent Marker', cursive;
+}
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.user img {
+    transform: scaleX(-1);
+}
