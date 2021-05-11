@@ -12,7 +12,7 @@
     align-items: center;
     height: 87vh;
 }
-.container span {
+.heading {
     font-family: 'Abel', sans-serif;
     font-size: 4.5rem;
     text-transform: uppercase;  

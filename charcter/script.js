@@ -7,7 +7,7 @@ window.addEventListener("keydown", function(event) {
     }
     
     console.log(event);
-    document.querySelector(".discrip").innerHTML = "Keycode of Key is "+event.keyCode;
+    document.querySelector(".discrip").innerHTML = "Keycode of Key is <span style = 'color: yellow;text-shadow: 1px 1px 2px black;'>"+event.keyCode+"</span>";
     document.querySelector(".prop-1 span").innerHTML = event.code;
     document.querySelector(".prop-2 span").innerHTML = Math.round(event.timeStamp) + " ms";
     document.querySelector(".prop-3 span").innerHTML = (event.key).charCodeAt(0).toString(2);
