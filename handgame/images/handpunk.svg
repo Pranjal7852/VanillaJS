@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HandPung | Online Stone Paper Scissors</title>
-    <link rel="stylesheet" href="./styles.css">
-    <!-- icon -->
-    <link rel="icon" href="./images/Cyberpunk_round.png">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">  
-</head>
-<body>
-    <header>Handpunk 2077</header>
-    <div class="container">
-        <div class="user"> <h3>You</h3> <img src="./images/paper.png" alt=""></div>
-        <div class="vs">VS</div>
-        <div class="pc"> <h3>Computer</h3> <img src="./images/rock.png" alt=""></div>
-        
-    </div>
-    <div class="container score">
-        <div class="sc-user">#</div>
-        <div class="sc-pc">#</div>
-    </div>
-    <div class="container control">
-        <button>Stone</button>
-        <button>Paper</button>
-        <button>Scissors</button>
-    </div>
-    <div class="animation">
-        <!-- SVG START HERE -->
-        <svg id="logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 820 312" style="enable-background:new 0 0 820 312;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
@@ -142,11 +111,3 @@
 		c0.37,0,0.55-0.18,0.55-0.55s-0.18-0.55-0.55-0.55c-0.37,0-0.55,0.18-0.55,0.55S710.06,186.97,710.43,186.97z"/>
 </g>
 </svg>
-<!-- SVG ENDS HERE -->
-    </div>
-    <footer>
-        Made with ❤️ By - Pranjal Goyal © CD Projekt RED
-    </footer>
-    <script src="./script.js"></script>
-</body>
-</html>
