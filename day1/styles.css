@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(33,36,38,255);
+}
+button {
+    padding: 20px 40px;
+    background-image: linear-gradient(90deg, rgba(41,42,42,255), rgba(27,30,32,255));
+    color: rgba(226,192,165,255);
+    border: 3px solid rgb(58, 58, 58);
+    font-size: 32px;
+    border-radius: 40px;
+    box-shadow: -10px -10px 30px -8px rgba(190, 190, 190, 0.267), 10px 10px 40px -5px black;
+    transition: 700ms;
+    outline: none;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: entrance 2s ease-in forwards;
+}
+button:hover {
+    background-image: linear-gradient(90deg, rgba(27,30,32,255), rgba(41,42,42,255));
+    border: 3px solid rgba(33,36,38,255);
+}
+@keyframes entrance {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
