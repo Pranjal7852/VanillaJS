@@ -112,12 +112,13 @@ button {
     box-shadow: -10px -10px 30px -8px rgba(190, 190, 190, 0.267), 10px 10px 40px -5px black;
     opacity: 0;
     transform: scale(0.9);
-    animation: entrance 2s ease-in forwards 2.5s;
+    animation: entrance 2s ease-in forwards 2s;
     transition: 300ms;
 }
-button:hover {
+button:active, .active{
     background-image: linear-gradient(90deg, rgba(27,30,32,255), rgba(41,42,42,255));
     border: 1px solid rgba(33,36,38,255);
+    color: rgba(226, 192, 165, 0.747);
 }
 @keyframes entrance {
     to {
@@ -125,6 +126,7 @@ button:hover {
         transform: scale(1);
     }
 }
+
 /* HOVER */
 .hover {
     padding: 1vh 4vw;
@@ -136,11 +138,13 @@ button:hover {
     box-shadow: -10px -10px 30px -8px rgba(190, 190, 190, 0.267), 10px 10px 40px -5px black;
     transition: 600ms;
     opacity: 0;
-    animation: entrance 2s ease-in forwards 3.9s;
+    animation: entrance 2s ease-in forwards 4s;
 }
-.hover:hover {
-    background-image: linear-gradient(90deg, rgba(27,30,32,255), rgba(41,42,42,255));
+.pressed {
+    background-color: rgba(226,192,165,255);
+    background-image: none;
     border: 1px solid rgba(33,36,38,255);
+    color: black;
 }
 /* FOOTEr  */
 .footer {
