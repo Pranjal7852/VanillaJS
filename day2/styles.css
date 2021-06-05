@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clock {
+    height: 23vw;
+    width: 23vw;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 100%;
+    padding: 5px;
+}
+.hand {
+    width: 46%;
+    background-color: black;
+    height: 6px;
+    top: 50%;
+    position: absolute;
+    transform-origin: 100%;
+    transition: all 500ms;
+    transition-timing-function: cubic-bezier(0.37, 2.6, 0.58, 1);
+}
+.second {
+    transform: rotate(90deg);
+    height: 3px;
+}
+.hour {
+    transform: rotate(34deg);
+}
+.min {
+    transform: rotate(47deg);
+}
