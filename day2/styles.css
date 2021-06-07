@@ -4,12 +4,24 @@
     box-sizing: border-box;
 }
 .clock {
-    height: 15vw;
-    width: 15vw;
+    height: 14vw;
+    width: 14vw;
     position: relative;
     border: 3px solid rgb(209, 209, 209);
     border-radius: 100%;
     padding: 5px;
+    animation: enter 2s ease;
+}
+@keyframes enter {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+    from {
+        transform: scale(0.7);
+        opacity: 0.6;
+    }
+    
 }
 .hand {
     width: 46%;
@@ -41,7 +53,14 @@
     color: white;
 }
 .time {
-    color: white;
+    color: #FF1515;
+    position: absolute;
+    bottom: -18%;
+    left: 24%;
+    font-size: 1.4vw;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 0.5vh 1.5vw;
+    font-family: 'Montserrat', sans-serif;
 }
 .us .name {
     left: 59%;
@@ -74,10 +93,26 @@ header {
     
 }
 #strange_svg path {
-    animation: fill_svg 1s ease linear;
+    animation: fill_svg 3s ease;
+    fill: #ff1515;
 }
-@keyfranes fill_svg {
-    to {
+@keyframes fill_svg {
+    100% {
+        fill: #ff1515a9;
+    }
+    95% {
+        fill: black;
+    }
+    90% {
+        fill: rgb(39, 19, 19);
+    }
+    80% {
+        fill: rgb(39, 19, 19);
+    }
+    60% {
         fill: #FF1515;
+    }
+    40% {
+        fill: black;
     }
 }

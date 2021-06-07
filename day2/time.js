@@ -47,7 +47,7 @@ function france() {
 
 }
 
-function setTime(chour, cMin, Csec, hourHand, minHand, secHand) {
+function setTime(chour, cMin, Csec, hourHand, minHand, secHand, time) {
     var curDate = new Date();
     var hour = curDate.getHours() + chour;
     var hourDeg = ((hour/12) * 360) + 90;
@@ -58,7 +58,7 @@ function setTime(chour, cMin, Csec, hourHand, minHand, secHand) {
     hourHand.style.transform = "rotate("+hourDeg+"deg)";
     minHand.style.transform = "rotate("+minDeg+"deg)"; 
     secHand.style.transform = "rotate("+secDeg+"deg)";
-    console.log(hourDeg);
+    time.textContent = Math.abs(hour)+":"+Math.abs(min)+":"+sec;
 }
 setInterval(london, 1000);
 setInterval(india, 1000);
@@ -66,4 +66,3 @@ setInterval(us, 1000);
 setInterval(japan, 1000);
 setInterval(russia, 1000);
 setInterval(france, 1000);
-console.log(document.querySelector(".london .hour"));
