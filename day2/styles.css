@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 .clock {
-    height: 20vw;
-    width: 20vw;
+    height: 15vw;
+    width: 15vw;
     position: relative;
-    border: 3px solid black;
+    border: 3px solid rgb(209, 209, 209);
     border-radius: 100%;
     padding: 5px;
 }
 .hand {
     width: 46%;
-    background-color: black;
-    height: 6px;
+    background-color: #FF1515;
+    height: 5px;
     top: 50%;
     position: absolute;
     transform-origin: 100%;
@@ -33,25 +33,40 @@
 }
 .name {
     position: absolute;
-    left: 50%;
+    left: 72%;
     bottom: 0%;
     transform: translate(-100%, -100%);
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: white;
+}
+.time {
+    color: white;
+}
+.us .name {
+    left: 59%;
+}
+.india .name {
+    left: 66%;
+}
+.japan .name {
+    left: 68%;
 }
 .main {
     display: flex;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 40vh;
     padding-top: 5vh;
     flex-wrap: wrap;
+    background-color: rgb(39, 19, 19);
 }
 header {
     width: 100%;
     height: 20vh;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(39, 19, 19);
     overflow: hidden;
     text-align: center;
+    padding-top: 1.9vh;
 }
 #strange_svg {
     width: 50%;
@@ -59,25 +74,10 @@ header {
     
 }
 #strange_svg path {
-    
+    animation: fill_svg 1s ease linear;
 }
-@keyframes neon {
-    100% {
-        opacity: 1;
-    }
-    95% {
-        opacity: 0.4;
-    }
-    85% {
-        opacity: 0.9;
-    }
-    65% {
-        opacity: 1;
-    }
-    45% {
-        opacity: 0.4;
-    }
-    25% {
-        opacity: 0.9;
+@keyfranes fill_svg {
+    to {
+        fill: #FF1515;
     }
 }
