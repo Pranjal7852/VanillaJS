@@ -47,7 +47,7 @@ function france() {
 
 }
 
-function setTime(chour, cMin, Csec, hourHand, minHand, secHand, time) {
+function setTime(chour, cMin, Csec, hourHand, secHand, minHand, time) {
     var curDate = new Date();
     var hour = curDate.getHours() + chour;
     var hourDeg = ((hour/12) * 360) + 90;
