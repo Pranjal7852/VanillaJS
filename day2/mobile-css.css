@@ -1,0 +1,22 @@
+@media screen and (max-width: 425px) {
+    .main {
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #strange_svg {
+        width: 90%;
+    }
+    .clock {
+        width: 55vw;
+        height: 55vw;
+    }
+    .time {
+        font-size: 4vh;
+        bottom: -30%;
+    }
+    footer {
+        padding-top: 3vh;
+    }
+}
