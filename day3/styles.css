@@ -1,0 +1,12 @@
+:root {
+    --spacing: 90px;
+    --base: yellow;
+    --blur: 10px;
+    --hue: 0deg;
+}
+img {
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+    filter: hue-rotate(var(--hue));
+}
